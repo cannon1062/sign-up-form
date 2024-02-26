@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     background-position: 75%;
     flex-shrink: 0;
+    min-width: 350px
 }
 
 .logo-card {
@@ -49,21 +50,107 @@ body {
     margin-bottom: .5rem;
 }
 
-.form-intro, .form-body {
+.form-area {
+    background-color: rgb(240, 234, 226);
+}
+
+.form-intro, .form-submit, .form-body {
     height: 33vh;
+    width: 67vw;
 }
 
 .form-intro {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: OptimusPrinceps;
     display: flex;
     flex-direction: column;
     justify-content: end;
     gap: 2rem;
-    background-color: rgb(240, 234, 226);
     padding: 4rem 2rem;
 }
 
 .form-intro p {
     width: 80%;
+}
+
+.form-body, .form-submit {
+    padding: 1rem 2rem;
+}
+
+.form-body {
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 10px 10px -10px gray;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    overflow: auto;
+}
+
+.form-body h2 {
+    font-size: 2rem;
+}
+
+.input-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.input-fields div {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    min-width: none;
+    font-size: 1rem;
+    margin-right: 4rem;
+}
+
+input {
+    appearance: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    width: 300px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    box-shadow: 2px 2px 5px 1px gray;
+    border-color: blue;
+    outline: none;
+}
+
+.form-submit button {
+    color: white;
+    background-color: rgb(128, 128, 128);
+    font-size: 32px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 10px 5px -5px darkgray;
+    margin-bottom: 2rem;
+}
+
+.form-submit button:hover {
+    background-color: lightgray;
+}
+
+.form-submit button:active, .form-submit button:focus {
+    background-color: black;
+}
+
+.login p, .login a {
+    font-size: large;
+    text-decoration: none;
+}
+
+.login a, .login a:visited {
+    color: rgb(128, 128, 128);
 }
