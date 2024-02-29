@@ -16,7 +16,7 @@ body {
 }
 
 .logo-sidebar {
-    width: 33vw;
+    flex: 1;
     display: flex;
     flex-direction: column;
     background-image: url(cant-Ipv_MNTzcQI-unsplash.jpg);
@@ -54,7 +54,7 @@ body {
     background-color: rgb(240, 234, 226);
     min-width: 500px;
     flex-shrink: 0;
-    width: 67vw;
+    flex: 2;
 }
 
 .form-intro, .form-submit, .form-body {
@@ -81,7 +81,7 @@ body {
 
 .form-body {
     background-color: rgb(238, 238, 238);
-    box-shadow: 0 10px 10px -10px gray;
+    box-shadow: 0 20px 20px -20px black;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -137,21 +137,21 @@ input:focus {
 
 .form-submit button {
     color: white;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(172, 191, 204);
     font-size: 32px;
     padding: 1rem 2rem;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 10px 5px -5px darkgray;
+    box-shadow: 0px 20px 20px -20px black;
     margin-bottom: 2rem;
 }
 
 .form-submit button:hover {
-    background-color: lightgray;
+    background-color: rgb(188, 209, 223);
 }
 
 .form-submit button:active, .form-submit button:focus {
-    background-color: black;
+    background-color: rgb(124, 143, 156);
 }
 
 .login p, .login a {
